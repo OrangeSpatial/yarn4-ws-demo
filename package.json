@@ -1,0 +1,30 @@
+{
+  "name": "yarn4-ws-demo",
+  "version": "1.0.0",
+  "packageManager": "yarn@4.1.1",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "files": [
+    "dist/**/*",
+    "lib/**/*"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "start": "yarn workspace vue3-vite-demo dev",
+    "build:shared": "yarn workspace @my-org/shared build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.2"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

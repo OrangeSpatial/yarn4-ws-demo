@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "types": [],
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "stripInternal": true
+    },
+    "include": [
+      "packages/global.d.ts",
+      "packages/vue-demo/src",
+      "packages/shared/src"
+    ]
+  }

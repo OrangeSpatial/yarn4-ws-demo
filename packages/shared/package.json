@@ -1,0 +1,24 @@
+{
+  "name": "@my-org/shared",
+  "version": "1.0.0",
+  "packageManager": "yarn@4.1.1",
+  "description": "Shared code for my org",
+  "main": "dist/shared.es.js",
+  "module": "dist/shared.es.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json"
+  },
+  "files": [
+    "types",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "directory": "packages/shared",
+    "url": ""
+  },
+  "devDependencies": {
+    "vite": "^5.2.10"
+  }
+}
